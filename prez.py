@@ -1,6 +1,7 @@
 import pandas as pd
 from functools import reduce
 from fpdf import FPDF
+import pprint
 
 
 def get_info(input_dict, col_name):
@@ -34,12 +35,12 @@ for prez_num in range(1, 3):
 
 for prez, info in prez_info:
     print(prez)
-    print(info)
+    pprint.pprint(info)
     print()
     print(str(prez) + '. ' + get_info(info, 'Name')[0])
-    print('Born:', get_info(info, 'Born.1')[0])
-    print('Died:', get_info(info, 'Died.1')[0])
-    print('Age at death:', get_info(info, 'Age')[0])
+    print('Born:', get_info(info, 'Year Born')[0])
+    print('Died:', get_info(info, 'Year Died')[0])
+    print('Age at death:', get_info(info, 'Age at death')[0])
 
 
 
