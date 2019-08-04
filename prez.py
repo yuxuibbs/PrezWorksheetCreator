@@ -38,9 +38,24 @@ for prez, info in prez_info:
     pprint.pprint(info)
     print()
     print(str(prez) + '. ' + get_info(info, 'Name')[0])
-    print('Born:', get_info(info, 'Year Born')[0])
-    print('Died:', get_info(info, 'Year Died')[0])
+    print('Date Born:', get_info(info, 'Date Born')[0])
+    print('Date Died:', get_info(info, 'Date Died')[0])
     print('Age at death:', get_info(info, 'Age at death')[0])
+    print('Burial location:', get_info(info, 'Burial location')[0])
+    print('Burial city:', get_info(info, 'Burial city')[0])
+    print('Burial state:', get_info(info, 'Burial state')[0])
+
+    print('Party:', get_info(info, 'Party')[0])
+    print('Date start:', get_info(info, 'Date Start')[0])
+    print('Date end:', get_info(info, 'Date End')[0])
+    print('State born:', get_info(info, 'State Born')[0])
+    print('Age at inauguration:', get_info(info, 'Age at inauguration')[0])
+    print('Office before presidency:', get_info(info, 'Office before presidency')[0])
+    
+
+
+
+
 
 
 
